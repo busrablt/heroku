@@ -3,6 +3,7 @@ module.exports = (details) => {
 <!doctype html>
 <html>
   <head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>PDF Result Template</title>
     <style>
@@ -31,7 +32,7 @@ module.exports = (details) => {
     .text{
         max-width: 70%;
         font-weight: 600;
-        font-family: Roboto;
+        font-family: 'Roboto', sans-serif;
         font-size: 30px;
         line-height: 1.4;
         color: #2a1a46;
@@ -48,7 +49,7 @@ module.exports = (details) => {
         margin-top: 50px;
     }
     .thanks-from-name{
-        font-family: Roboto;
+        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 18px;
         color: #303AB2;
