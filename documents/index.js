@@ -1,5 +1,5 @@
 module.exports = (details) => {
-    return `
+  return `
 <!doctype html>
 <html>
   <head>
@@ -31,9 +31,9 @@ module.exports = (details) => {
     .text{
         max-width: 70%;
         font-weight: 600;
+        font-family: Roboto;
         font-size: 36px;
         line-height: 1.4;
-        flex-basis: 60%;
         color: #2a1a46;
     }
     .image-container{
@@ -73,7 +73,7 @@ module.exports = (details) => {
               >${details.reasons[0].message.toLowerCase()} teşekkürler.</span
             >
             <span> ${details?.reasons[1]?.message[0].toUpperCase() +
-        details?.reasons[1]?.message.substring(1).toLowerCase()}.</span>
+    details?.reasons[1]?.message.substring(1).toLowerCase()}.</span>
         <div class="image-container">
             <img alt="Image" src= '${details.image}' />
           </div>
