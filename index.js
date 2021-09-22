@@ -19,7 +19,6 @@ app.post('/create-pdf', (req, res) => {
         if (err) {
             res.send(Promise.reject());
         }
-        console.log("deneme")
         res.send(Promise.resolve());
 
     });
