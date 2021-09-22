@@ -13,9 +13,11 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.get('/', (req, res) => {
+    res.send('PDF server is running!')
+})
 app.post('/create-pdf', (req, res) => {
     console.log("PDF", pdfTemplate)
-    console.log("deneme")
     pdf.create(pdfTemplate(req.body), options).toFile('result.pdf', (err) => {
         if (err) {
             res.send(Promise.reject());
