@@ -32,7 +32,7 @@ module.exports = (details) => {
         max-width: 70%;
         font-weight: 600;
         font-family: Roboto;
-        font-size: 36px;
+        font-size: 30px;
         line-height: 1.4;
         color: #2a1a46;
     }
